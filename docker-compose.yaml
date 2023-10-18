@@ -1,0 +1,7 @@
+version: '3'
+services:
+  get_tan_cat:
+    build:
+      context: .
+    ports:
+      - 8080:8080
