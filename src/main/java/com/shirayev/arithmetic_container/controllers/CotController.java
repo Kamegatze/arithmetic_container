@@ -9,10 +9,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/cot")
+@RequestMapping("/api/pmi-120")
 public class CotController {
 
-    @PostMapping("/")
+    @PostMapping("/cot")
     public ResponseEntity<Response> handlerGetCotResult(@RequestBody Request request) {
 
         EMeasurementType type = EMeasurementType.valueOf(request.getMeasurementType());

@@ -9,10 +9,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/tan")
+@RequestMapping("/api/pmi-120")
 public class TanController {
 
-    @PostMapping("")
+    @PostMapping("/tan")
     public ResponseEntity<Response> handlerGetTanResult(@RequestBody Request request) {
 
         EMeasurementType type = EMeasurementType.valueOf(request.getMeasurementType());
